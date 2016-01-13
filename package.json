@@ -1,0 +1,19 @@
+{
+  "name": "pelias-wof-countrycode-lookup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelias/wof-countrycode-lookup.git"
+  },
+  "author": "mapzen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pelias/wof-countrycode-lookup/issues"
+  },
+  "homepage": "https://github.com/pelias/wof-countrycode-lookup#readme"
+}
