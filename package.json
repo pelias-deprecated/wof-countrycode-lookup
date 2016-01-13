@@ -1,0 +1,37 @@
+{
+  "name": "pelias-wof-countrycode-lookup",
+  "version": "1.0.0",
+  "description": "This project exposes a stream that will modify pelias Document objects to include a country code. It is a temporary project that will last until Who's on First PiP server supports 3 character country codes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/countryCodeLookupTest.js | tap-dot",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pelias/wof-countrycode-lookup.git"
+  },
+  "author": "mapzen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pelias/wof-countrycode-lookup/issues"
+  },
+  "homepage": "https://github.com/pelias/wof-countrycode-lookup#readme",
+  "dependencies": {
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "event-stream": "^3.3.2",
+    "pelias-model": "^0.4.0",
+    "jshint": "^2.5.6",
+    "precommit-hook": "^1.0.7",
+    "tap-dot": "^1.0.0",
+    "tape": "^4.2.2"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
+}
