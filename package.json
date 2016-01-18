@@ -1,6 +1,6 @@
 {
   "name": "pelias-wof-countrycode-lookup",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "This project exposes a stream that will modify pelias Document objects to include a country code. It is a temporary project that will last until Who's on First PiP server supports 3 character country codes.",
   "main": "index.js",
   "scripts": {
