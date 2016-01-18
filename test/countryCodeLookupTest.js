@@ -12,11 +12,11 @@ function test_stream(input, testedStream, callback) {
 
 tape('iso3 country code lookups', function(test) {
   test.test('unsupported country should not set alpha3', function(t) {
-    var inputDoc = new Document( 'whosonfirst', '1')
+    var inputDoc = new Document( 'whosonfirst', 'placetype', '1')
                     .setAlpha3( '!@#' )
                     .setAdmin( 'admin0', 'Unsupported Country');
 
-    var expectedDoc = new Document( 'whosonfirst', '1')
+    var expectedDoc = new Document( 'whosonfirst', 'placetype', '1')
                     .setAlpha3( '!@#' )
                     .setAdmin( 'admin0', 'Unsupported Country');
 
@@ -30,11 +30,11 @@ tape('iso3 country code lookups', function(test) {
   });
 
   test.test('supported country should override alpha3', function(t) {
-    var inputDoc = new Document( 'whosonfirst', '1')
+    var inputDoc = new Document( 'whosonfirst', 'placetype', '1')
                     .setAlpha3('XYZ')
                     .setAdmin( 'admin0', 'France' );
 
-    var expectedDoc = new Document( 'whosonfirst', '1')
+    var expectedDoc = new Document( 'whosonfirst', 'placetype', '1')
                     .setAlpha3('FRA')
                     .setAdmin( 'admin0', 'France' );
 
